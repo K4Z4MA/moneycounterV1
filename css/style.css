@@ -1,9 +1,32 @@
 html{
     width: 100%;
     height: 100%;
+    font-family: arial, sans-serif;
+}
+body{
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 161px;
+    background-color: #16499f;
+}
+.logo{
+    text-align: left;
+    width: 200px;
+    height: 161px;
+    background-image: url('image/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: absolute;
 }
 h1{
     text-align: center;
+    color: white;
+    margin: 0;
+    line-height: 3.5em;
+    font-size: 3em;
 }
 label{
     font-size: 2em;
@@ -16,20 +39,37 @@ label{
     margin: 1em 45% 0 45%;
     height: 2em;
     font-size: 2em;
+    background-color: #16499f;
+    color: white;
+    border-radius: 15px;
+    border: 3.5px solid black;
+}
+#resetButton:hover{
+    cursor: pointer;
 }
 #quantityEntry{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     width: 80%;
-    height: 20em;
+    height: 70%;
     margin: 0 10% 0 10%;
+}
+.sectionTitle{
+    text-align: center;
+    padding-right: 3em;
+    font-size: 2.5em;
+}
+.inputRow{
+    margin: 1.5em 0 1.5em 0;
 }
 .numberInput{
     margin-right: 0;
     font-size: 2em;
-    width: 4em;
+    width: 25%;
     display: inline-block;
+    box-shadow: 6px 8px 8px rgba(0,0,0,0.6);
+
 }
 .singleResult{
     width: 40%;
@@ -40,13 +80,26 @@ label{
 #submitButton{
     align-self: flex-end;
     width: 10%;
-    margin: 1em 45% 0 45%;
+    margin: 0.5em 45% 0 45%;
     height: 2em;
     font-size: 2em;
+    background-color: #16499f;
+    color: white;
+    border-radius: 15px;
+    border: 3.5px solid black;
+}
+#submitButton:hover{
+    cursor: pointer;
 }
 #sectionChange{
     width: 45%;
 }
 #sectionBills{
     width: 45%;
+}
+#total{
+    text-align: center;
+    font-size: 2em;
+    margin: 0.5em 0 1em 0;
+    padding-bottom: 0.5em;
 }
