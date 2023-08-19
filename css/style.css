@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+#resetButton{
+    width: 10%;
+    margin: 1em 45% 0 45%;
+    height: 2em;
+    font-size: 2em;
+}
+#quantityEntry{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 80%;
+    height: 10em;
+    margin: 0 10% 0 10%;
+}
+#submitButton{
+    align-self: flex-end;
+}
+/*#sectionChange{
+    width: 50%;
+}
+#sectionBills{
+    width: 50%;
+}

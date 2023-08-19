@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link href="css/style.css" rel="stylesheet" media="screen" />
+    <title>Money Counter</title>
+</head>
+<script src="js/script.js"></script>
+<body>
+    <h1>Money Counter</h1>
+    <button onclick="reset()" id="resetButton">Reset</button>
+    <form onsubmit="calculate()" id="quantityEntry">
+        <div id="sectionChange">
+            <div id="fiveCent">
+                <label for="fiveCentInput">5¢</label>
+                <input type="number" id="fiveCentInput" name="fiveCentInput"/>
+                <p id="fiveCentOutput"></p>
+            </div>
+            <div id="tenCent">
+                <label for="Input">10¢</label>
+                <input type="number" id="tenCentInput" name="tenCentInput"/>
+                <p id="tenCentOutput"></p>
+            </div>
+            <div id="twentyFiveCent">
+                <label for="twentyFiveCentInput">25¢</label>
+                <input type="number" id="twentyFiveCentInput" name="twentyFiveCentInput"/>
+                <p id="twentyFiveCentOutput"></p>
+            </div>
+            <div id="oneDollar">
+                <label for="oneDollarInput">1$</label>
+                <input type="number" id="oneDollarInput" name="oneDollarInput"/>
+                <p id="oneDollarOutput"></p>
+            </div>
+            <div id="twoDollar">
+                <label for="twoDollarInput">2$</label>
+                <input type="number" id="twoDollarInput" name="twoDollarInput"/>
+                <p id="twoDollarOutput"></p>
+            </div>
+
+        </div>
+        <div id="sectionBills">
+            <div id="fiveDollar">
+                <label for="fiveDollarInput">5$</label>
+                <input type="number" id="fiveDollarInput" name="fiveDollarInput"/>
+                <p id="fiveDollarOutput"></p>
+            </div>
+            <div id="tenDollar">
+                <label for="tenDollarInput">10$</label>
+                <input type="number" id="tenDollarInput" name="tenDollarInput"/>
+                <p id="tenDollarOutput"></p>
+            </div>
+            <div id="twentyDollar">
+                <label for="twentyDollarInput">20$</label>
+                <input type="number" id="twentyDollarInput" name="twentyDollarInput"/>
+                <p id="twentyDollarOutput"></p>
+            </div>
+            <div id="fiftyDollar">
+                <label for="fiftyDollarInput">50$</label>
+                <input type="number" id="fiftyDollarInput" name="fiftyDollarInput"/>
+                <p id="fiftyDollarOutput"></p>
+            </div>
+            <div id="hundredDollar">
+                <label for="hundredDollarInput">100$</label>
+                <input type="number" id="hundredDollarInput" name="hundredDollarInput"/>
+                <p id="hundredDollarOutput"></p>
+            </div>
+        </div>
+        <input type="submit" value="Submit" id="submitButton"/>
+    </form>
+    <p id="total"></p>
+</body>
+</html>
