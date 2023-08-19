@@ -1,5 +1,15 @@
+html{
+    width: 100%;
+    height: 100%;
+}
 h1{
     text-align: center;
+}
+label{
+    font-size: 2em;
+    width: 30%;
+    display: inline-block;
+    text-align: right;
 }
 #resetButton{
     width: 10%;
@@ -12,15 +22,31 @@ h1{
     flex-flow: row wrap;
     justify-content: space-around;
     width: 80%;
-    height: 10em;
+    height: 20em;
     margin: 0 10% 0 10%;
+}
+.numberInput{
+    margin-right: 0;
+    font-size: 2em;
+    width: 4em;
+    display: inline-block;
+}
+.singleResult{
+    width: 40%;
+    margin: 0;
+    display: inline-block;
+    font-size: 2em;
 }
 #submitButton{
     align-self: flex-end;
+    width: 10%;
+    margin: 1em 45% 0 45%;
+    height: 2em;
+    font-size: 2em;
 }
-/*#sectionChange{
-    width: 50%;
+#sectionChange{
+    width: 45%;
 }
 #sectionBills{
-    width: 50%;
+    width: 45%;
 }

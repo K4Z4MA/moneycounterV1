@@ -24,61 +24,61 @@ function calculate(){
     if (Number.isNaN(totalFiveCent)) {
         totalFiveCent = parseInt(0);
     } else {
-        document.getElementById("fiveCentOutput").innerHTML = totalFiveCent + "$";
+        document.getElementById("fiveCentOutput").innerHTML = "=" + totalFiveCent + "$";
     }
 
     if (Number.isNaN(totalTenCent)) {
         totalTenCent = parseInt(0);
     } else {
-        document.getElementById("tenCentOutput").innerHTML = totalTenCent + "$";
+        document.getElementById("tenCentOutput").innerHTML = "=" + totalTenCent + "$";
     }
 
     if (Number.isNaN(totalTwentyFiveCent)) {
         totalTwentyFiveCent = parseInt(0);
     } else {
-        document.getElementById("twentyFiveCentOutput").innerHTML = totalTwentyFiveCent + "$";
+        document.getElementById("twentyFiveCentOutput").innerHTML = "=" + totalTwentyFiveCent + "$";
     }
 
     if (Number.isNaN(totalOneDollar)) {
         totalOneDollar = parseInt(0);
     } else {
-        document.getElementById("oneDollarOutput").innerHTML = totalOneDollar + "$";
+        document.getElementById("oneDollarOutput").innerHTML = "=" + totalOneDollar + "$";
     }
 
     if (Number.isNaN(totalTwoDollar)) {
         totalTwoDollar = parseInt(0);
     } else {
-        document.getElementById("twoDollarOutput").innerHTML = totalTwoDollar + "$";
+        document.getElementById("twoDollarOutput").innerHTML = "=" + totalTwoDollar + "$";
     }
 
     if (Number.isNaN(totalFiveDollar)) {
         totalFiveDollar = parseInt(0);
     } else {
-        document.getElementById("fiveDollarOutput").innerHTML = totalFiveDollar + "$";
+        document.getElementById("fiveDollarOutput").innerHTML = "=" + totalFiveDollar + "$";
     }
 
     if (Number.isNaN(totalTenDollar)) {
         totalTenDollar = parseInt(0);
     } else {
-        document.getElementById("tenDollarOutput").innerHTML = totalTenDollar + "$";
+        document.getElementById("tenDollarOutput").innerHTML = "=" + totalTenDollar + "$";
     }
 
     if (Number.isNaN(totalTwentyDollar)) {
         totalTwentyDollar = parseInt(0);
     } else {
-        document.getElementById("twentyDollarOutput").innerHTML = totalTwentyDollar + "$";
+        document.getElementById("twentyDollarOutput").innerHTML = "=" + totalTwentyDollar + "$";
     }
 
     if (Number.isNaN(totalFiftyDollar)) {
         totalFiftyDollar = parseInt(0);
     } else {
-        document.getElementById("fiftyDollarOutput").innerHTML = totalFiftyDollar + "$";
+        document.getElementById("fiftyDollarOutput").innerHTML = "=" + totalFiftyDollar + "$";
     }
 
     if (Number.isNaN(totalHundredDollar)) {
         totalHundredDollar = parseInt(0);
     } else {
-        document.getElementById("hundredDollarOutput").innerHTML = totalHundredDollar + "$";
+        document.getElementById("hundredDollarOutput").innerHTML = "=" + totalHundredDollar + "$";
     }
     /*document.getElementById("twentyFiveCentOutput").innerHTML = totalTwentyFiveCent + "$";
     document.getElementById("oneDollarOutput").innerHTML = totalOneDollar + "$";
@@ -90,7 +90,7 @@ function calculate(){
     document.getElementById("hundredDollarOutput").innerHTML = totalHundredDollar + "$";*/
 
     let total = totalFiveCent + totalTenCent + totalTwentyFiveCent + totalOneDollar + totalTwoDollar + totalFiveDollar + totalTenDollar + totalTwentyDollar + totalFiftyDollar + totalHundredDollar;
-    document.getElementById("total").innerHTML = "The total of the amount is " + total;
+    document.getElementById("total").innerHTML = "The total of the amount is " + total.toFixed(2);
     //alert(fiveCent + tenCent + twentyFiveCent + oneDollar + twoDollar + fiveDollar + tenDollar + twentyDollar + fiftyDollar + hundredDollar)
 }
 
