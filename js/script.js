@@ -80,18 +80,9 @@ function calculate(){
     } else {
         document.getElementById("hundredDollarOutput").innerHTML = "=" + totalHundredDollar + "$";
     }
-    /*document.getElementById("twentyFiveCentOutput").innerHTML = totalTwentyFiveCent + "$";
-    document.getElementById("oneDollarOutput").innerHTML = totalOneDollar + "$";
-    document.getElementById("twoDollarOutput").innerHTML = totalTwoDollar + "$";
-    document.getElementById("fiveDollarOutput").innerHTML = totalFiveDollar + "$";
-    document.getElementById("tenDollarOutput").innerHTML = totalTenDollar + "$";
-    document.getElementById("twentyDollarOutput").innerHTML = totalTwentyDollar + "$";
-    document.getElementById("fiftyDollarOutput").innerHTML = totalFiftyDollar + "$";
-    document.getElementById("hundredDollarOutput").innerHTML = totalHundredDollar + "$";*/
 
     let total = totalFiveCent + totalTenCent + totalTwentyFiveCent + totalOneDollar + totalTwoDollar + totalFiveDollar + totalTenDollar + totalTwentyDollar + totalFiftyDollar + totalHundredDollar;
     document.getElementById("total").innerHTML = "The total of the amount is " + total.toFixed(2);
-    //alert(fiveCent + tenCent + twentyFiveCent + oneDollar + twoDollar + fiveDollar + tenDollar + twentyDollar + fiftyDollar + hundredDollar)
 }
 
 function reset(){
