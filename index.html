@@ -7,33 +7,35 @@
 </head>
 <script src="js/script.js"></script>
 <body>
-	<div class="header">
-		<h1>Money Counter</h1>
-	</div>
+    <div class="header">
+        <div class="logo"></div>
+        <h1>Money Counter</h1>
+    </div>
     <button onclick="reset()" id="resetButton">Reset</button>
     <form onsubmit="calculate()" id="quantityEntry">
         <div id="sectionChange">
-            <div id="fiveCent">
+            <h2 class="sectionTitle">Coins</h2>
+            <div id="fiveCent" class="inputRow">
                 <label for="fiveCentInput">5¢X</label>
                 <input type="number" id="fiveCentInput" name="fiveCentInput" class="numberInput"/>
                 <p id="fiveCentOutput" class="singleResult"></p>
             </div>
-            <div id="tenCent">
+            <div id="tenCent" class="inputRow">
                 <label for="Input">10¢X</label>
                 <input type="number" id="tenCentInput" name="tenCentInput" class="numberInput"/>
                 <p id="tenCentOutput" class="singleResult"></p>
             </div>
-            <div id="twentyFiveCent">
+            <div id="twentyFiveCent" class="inputRow">
                 <label for="twentyFiveCentInput">25¢X</label>
                 <input type="number" id="twentyFiveCentInput" name="twentyFiveCentInput" class="numberInput"/>
                 <p id="twentyFiveCentOutput" class="singleResult"></p>
             </div>
-            <div id="oneDollar">
+            <div id="oneDollar" class="inputRow">
                 <label for="oneDollarInput">1$X</label>
                 <input type="number" id="oneDollarInput" name="oneDollarInput" class="numberInput"/>
                 <p id="oneDollarOutput" class="singleResult"></p>
             </div>
-            <div id="twoDollar">
+            <div id="twoDollar" class="inputRow">
                 <label for="twoDollarInput">2$X</label>
                 <input type="number" id="twoDollarInput" name="twoDollarInput" class="numberInput"/>
                 <p id="twoDollarOutput" class="singleResult"></p>
@@ -41,33 +43,34 @@
 
         </div>
         <div id="sectionBills">
-            <div id="fiveDollar">
+            <h2 class="sectionTitle">Bills</h2>
+            <div id="fiveDollar" class="inputRow">
                 <label for="fiveDollarInput">5$X</label>
                 <input type="number" id="fiveDollarInput" name="fiveDollarInput" class="numberInput"/>
                 <p id="fiveDollarOutput" class="singleResult"></p>
             </div>
-            <div id="tenDollar">
+            <div id="tenDollar" class="inputRow">
                 <label for="tenDollarInput">10$X</label>
                 <input type="number" id="tenDollarInput" name="tenDollarInput" class="numberInput"/>
                 <p id="tenDollarOutput" class="singleResult"></p>
             </div>
-            <div id="twentyDollar">
+            <div id="twentyDollar" class="inputRow">
                 <label for="twentyDollarInput">20$X</label>
                 <input type="number" id="twentyDollarInput" name="twentyDollarInput" class="numberInput"/>
                 <p id="twentyDollarOutput" class="singleResult"></p>
             </div>
-            <div id="fiftyDollar">
+            <div id="fiftyDollar" class="inputRow">
                 <label for="fiftyDollarInput">50$X</label>
                 <input type="number" id="fiftyDollarInput" name="fiftyDollarInput" class="numberInput"/>
                 <p id="fiftyDollarOutput" class="singleResult"></p>
             </div>
-            <div id="hundredDollar">
+            <div id="hundredDollar" class="inputRow">
                 <label for="hundredDollarInput">100$X</label>
                 <input type="number" id="hundredDollarInput" name="hundredDollarInput" class="numberInput"/>
                 <p id="hundredDollarOutput" class="singleResult"></p>
             </div>
         </div>
-        <input type="submit" value="Submit" id="submitButton"/>
+        <input type="submit" value="Total" id="submitButton"/>
     </form>
     <p id="total"></p>
 </body>

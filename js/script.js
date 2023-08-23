@@ -24,19 +24,19 @@ function calculate(){
     if (Number.isNaN(totalFiveCent)) {
         totalFiveCent = parseInt(0);
     } else {
-        document.getElementById("fiveCentOutput").innerHTML = "=" + totalFiveCent + "$";
+        document.getElementById("fiveCentOutput").innerHTML = "=" + totalFiveCent.toFixed(2) + "$";
     }
 
     if (Number.isNaN(totalTenCent)) {
         totalTenCent = parseInt(0);
     } else {
-        document.getElementById("tenCentOutput").innerHTML = "=" + totalTenCent + "$";
+        document.getElementById("tenCentOutput").innerHTML = "=" + totalTenCent.toFixed(2) + "$";
     }
 
     if (Number.isNaN(totalTwentyFiveCent)) {
         totalTwentyFiveCent = parseInt(0);
     } else {
-        document.getElementById("twentyFiveCentOutput").innerHTML = "=" + totalTwentyFiveCent + "$";
+        document.getElementById("twentyFiveCentOutput").innerHTML = "=" + totalTwentyFiveCent.toFixed(2) + "$";
     }
 
     if (Number.isNaN(totalOneDollar)) {
@@ -82,11 +82,14 @@ function calculate(){
     }
 
     let total = totalFiveCent + totalTenCent + totalTwentyFiveCent + totalOneDollar + totalTwoDollar + totalFiveDollar + totalTenDollar + totalTwentyDollar + totalFiftyDollar + totalHundredDollar;
-    document.getElementById("total").innerHTML = "The total of the amount is " + total.toFixed(2);
+
+    document.getElementById("total").innerHTML = "The total of the amount is " + total.toFixed(2) + "$" + "<br/>**Made by Alexandre Sammut. Contact me to remove this message or any other modification, ask me before utilisation!**©";
+
 }
 
+
 function reset(){
-    document.getElementById("QuantityEntry").reset();
+    document.getElementById("quantityEntry").reset();
     document.getElementById("fiveCentOutput").innerHTML = "";
     document.getElementById("tenCentOutput").innerHTML = "";
     document.getElementById("twentyFiveCentOutput").innerHTML = "";
